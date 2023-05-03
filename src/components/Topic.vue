@@ -1,12 +1,12 @@
 <template>
-	<div class="px-4 py-5 bg-black">
-		<h1 class="text-yellow-500 text-2xl font-extrabold">New</h1>
-
-		<div class="mt-4">
-			<div v-for="item in newlist" class="mb-9 last-of-type:border-b border-grey-400">
- 				<h2 class="text-white font-bold">{{ item.title }}</h2>
-				<p class="text-gray-400 text-xs mt-2">{{ item.desc }}</p>
- 			</div>
+	<!-- max-w-2xs -->
+	<div class="px-5 py-7 bg-dark-blue h-full">
+		<h1 class="text-gold-yellow text-4xl">New</h1>
+		<div class="mt-6">
+			<div v-for="(item, i) in newlist" class="mb-12 relative after:absolute after:inset-x-0 after:h-0.5 after:bg-gray-700 after:last:h-0 last:mb-0">
+				<h2 class="text-white text-xl font-bold">{{ item.title }}</h2>
+				<p class="text-dark-grey text-s mt-2" :class="i + 1 == newlist.length ? 'mb-0' : 'mb-6'">{{ item.desc }}</p>
+			</div>
 		</div>
 	</div>
 </template>
@@ -15,17 +15,18 @@
 const newlist = [
 	{
 		title: "Hydrogen VS Electric Cars",
-		desc: "Will hydrogen-fueled cars ever catch up to Evs?",
+		desc: "Will n-fueled cars ever catch up to Evs?",
 	},
 	{
-		title: "Hydrogen VS Electric Cars",
-		desc: "Will hydrogen-fueled cars ever catch up to Evs?",
+		title: "The Downsides of AI Artistry",
+		desc: "What are the possible adverse effects of on-demand AI image generation?",
 	},
 	{
-		title: "Hydrogen VS Electric Cars",
-		desc: "Will hydrogen-fueled cars ever catch up to Evs?",
+		title: "Is VC funding Drying Up?",
+		desc: "Private funding by VC firms is down 50% YOY. We take a look at what that means.",
 	},
 ];
 </script>
 
 <style lang="scss" scoped></style>
+hydroge
