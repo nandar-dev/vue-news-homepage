@@ -1,10 +1,12 @@
 {
+  "homepage": "https://github.com/nandar-dev/vue-news-homepage",
   "name": "vue-news-homepage",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "dev": "vite",
     "build": "run-p type-check build-only",
+    "deploy": "npm run build && gh-pages -d dist",
     "preview": "vite preview",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit",
