@@ -1,6 +1,6 @@
 <template>
 	<!-- max-w-2xs -->
-	<div class="px-5 py-7 bg-dark-blue h-full">
+	<div class="px-5 py-7 bg-dark-blue h-full mt-10 md:mt-0">
 		<h1 class="text-gold-yellow text-4xl">New</h1>
 		<div class="mt-6">
 			<div v-for="(item, i) in newlist" class="mb-12 relative after:absolute after:inset-x-0 after:h-0.5 after:bg-gray-700 after:last:h-0 last:mb-0">

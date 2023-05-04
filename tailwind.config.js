@@ -7,6 +7,7 @@ module.exports = {
 				"dark-blue": "hsl(240, 100%, 5%)",
 				"gold-yellow": "hsl(35, 77%, 62%)",
 				"dark-grey": "hsl(236, 13%, 42%)",
+				tomato: "hsl(5, 85%, 63%)",
 			},
 			height: {
 				0.5: "0.2px",
@@ -17,10 +18,10 @@ module.exports = {
 			maxWidth: {
 				"2xs": "270px",
 			},
-		 
+
 			container: {
 				screens: {
-					"2xl": "1280px",
+					xl: "1280px",
 				},
 			},
 		},

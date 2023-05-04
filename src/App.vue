@@ -1,24 +1,29 @@
 <template>
-	<div class="container mx-auto">
+	<div class="container mx-auto px-10">
 		<!-- <div class="px-36"> -->
-			<Nav />
-			<main class="mt-5">
-				<div class="flex gap-8">
-					<div>
-						<Main />	
-					</div>
-					<!-- <img class="col-span-1 sm:col-span-2 w-full h-72" src="./assets/images/image-web-3-desktop.jpg" alt="" /> -->
+		<Nav />
+		<main class="mt-5">
+			<div class="md:flex justify-between gap-8">
+				<div>
+					<Main />
+				</div>
+				<div>
 					<Topic />
 				</div>
-			</main>
-		</div>
-	<!-- </div> -->
+			</div>
+		</main>
+
+		<SubTopic />
+
+		<!-- </div> -->
+	</div>
 </template>
 
 <script setup lang="ts">
 import Nav from "./components/Nav.vue";
 import Topic from "./components/Topic.vue";
 import Main from "./components/Main.vue";
+import SubTopic from "./components/SubTopic.vue";
 </script>
 
 <style scoped></style>
